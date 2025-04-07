@@ -22,14 +22,8 @@
     :class="{ 'wishlist-button-product': isProduct }"
     @click="addToWishlist"
   >
-    <i
-      class="material-icons"
-      v-if="isChecked"
-    >favorite</i>
-    <i
-      class="material-icons"
-      v-else
-    >favorite_border</i>
+    <i class="fa-solid fa-heart" v-if="isChecked"></i>
+    <i class="fa-solid fa-heart" v-else></i>
   </button>
 </template>
 
